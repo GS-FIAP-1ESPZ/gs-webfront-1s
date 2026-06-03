@@ -299,3 +299,72 @@ body {
     font-weight: bold;
     color: var(--destaque);
 }
+
+/* Rodapé */
+.rodape {
+    background-color: var(--fundo-claro);
+    border-top: 1px solid var(--borda);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.rodape p {
+    margin-bottom: 4px;
+}
+
+.rodape-mini {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide-texto h2 {
+        font-size: 18px;
+    }
+
+    .slide-texto p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        order: 4;
+    }
+
+    .temas {
+        order: 2;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .seta {
+        padding: 6px 10px;
+        font-size: 18px;
+    }
+}
