@@ -79,3 +79,60 @@ setInterval(function () {
 }, 5000);
 
 mostrarSlide(0);
+
+
+/* Quiz (10 perguntas) */
+const perguntas = [
+    {
+        pergunta: "Qual é o tema central da Global Solution da FIAP?",
+        opcoes: ["Tecnologia espacial aplicada a desafios reais", "Jogos digitais", "Culinária internacional", "História da arte"],
+        correta: 0
+    },
+    {
+        pergunta: "O que os satélites podem monitorar para ajudar o meio ambiente?",
+        opcoes: ["Apenas o trânsito das cidades", "Desmatamento e emissões de carbono", "Programas de TV", "Preço de ações"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual área usa imagens de satélite para aumentar a produtividade?",
+        opcoes: ["Agricultura", "Teatro", "Moda", "Música"],
+        correta: 0
+    },
+    {
+        pergunta: "O que a conectividade via satélite permite?",
+        opcoes: ["Diminuir o número de satélites", "Levar internet a regiões remotas", "Acabar com a internet", "Apenas ligações telefônicas"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual tecnologia é usada para analisar grandes volumes de dados espaciais?",
+        opcoes: ["Máquina de escrever", "Fax", "Inteligência Artificial", "Rádio AM"],
+        correta: 2
+    },
+    {
+        pergunta: "A 'economia espacial' está ligada a quê?",
+        opcoes: ["Negócios e oportunidades ligados ao espaço", "Economizar energia em casa", "Cortar gastos do governo", "Guardar dinheiro no banco"],
+        correta: 0
+    },
+    {
+        pergunta: "Qual ODS está ligada à ação climática?",
+        opcoes: ["ODS 1", "ODS 5", "ODS 13", "ODS 17"],
+        correta: 2
+    },
+    {
+        pergunta: "Dados espaciais também ajudam na prevenção de quê?",
+        opcoes: ["Desastres naturais", "Falta de ingressos de cinema", "Atrasos de ônibus", "Filas em lojas"],
+        correta: 0
+    },
+    {
+        pergunta: "Sistemas autônomos e robótica são usados para quê?",
+        opcoes: ["Decorar ambientes", "Exploração e operações no espaço", "Cozinhar comida", "Lavar roupas"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual é o objetivo principal da Global Solution?",
+        opcoes: ["Propor soluções com tecnologia e inovação para desafios da Terra", "Vender produtos online", "Criar uma rede social", "Organizar uma festa"],
+        correta: 0
+    }
+];
+
+const quizPerguntas = document.getElementById("quiz-perguntas");
