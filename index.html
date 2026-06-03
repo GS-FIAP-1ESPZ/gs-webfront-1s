@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Space Connect - Global Solution FIAP</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="theme-space">
+
+    <!-- Cabeçalho e menu -->
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">🚀 Space Connect</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#areas">Áreas</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="temas">
+                <span class="temas-label">Tema:</span>
+                <button class="tema-btn cor-espaco" data-tema="theme-space" title="Tema Espaço"></button>
+                <button class="tema-btn cor-claro" data-tema="theme-light" title="Tema Claro"></button>
+                <button class="tema-btn cor-roxo" data-tema="theme-purple" title="Tema Roxo"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <section id="inicio" class="slideshow">
+        <div class="slides">
+            <div class="slide ativo">
+                <img src="img/slide1.svg" alt="Satélite observando a Terra">
+                <div class="slide-texto">
+                    <h2>A nova corrida tecnológica</h2>
+                    <p>O espaço deixou de ser apenas exploração científica e virou um dos territórios mais estratégicos para inovação.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/slide2.svg" alt="Foguete sendo lançado">
+                <div class="slide-texto">
+                    <h2>Tecnologia espacial a serviço da Terra</h2>
+                    <p>Dados de satélites ajudam a monitorar o desmatamento, as emissões de carbono e a prevenir desastres naturais.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/slide3.svg" alt="Satélite enviando dados">
+                <div class="slide-texto">
+                    <h2>Inovação, dados e sustentabilidade</h2>
+                    <p>Conectividade, agricultura inteligente e novas oportunidades de negócio para resolver desafios do planeta.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="seta seta-anterior" id="anterior">&#10094;</button>
+        <button class="seta seta-proxima" id="proxima">&#10095;</button>
+
+        <div class="bolinhas" id="bolinhas"></div>
+    </section>
+
+    <!-- Sobre o tema -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre o tema</h2>
+            <p class="texto-centro">
+                A <strong>Global Solution</strong> tem como tema a <strong>tecnologia espacial aplicada a desafios reais</strong>.
+                O desafio é usar tecnologia, dados e inovação para resolver problemas reais. Este projeto, chamado <strong>Space Connect</strong>,
+                apresenta o tema e testa o seu conhecimento sobre ele.
+            </p>
+
+            <div class="ods">
+                <span class="ods-tag">ODS 2 - Fome Zero</span>
+                <span class="ods-tag">ODS 8 - Trabalho e Crescimento</span>
+                <span class="ods-tag">ODS 9 - Indústria e Inovação</span>
+                <span class="ods-tag">ODS 11 - Cidades Sustentáveis</span>
+                <span class="ods-tag">ODS 13 - Ação Climática</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de atuação -->
+    <section id="areas" class="secao secao-alt">
+        <div class="container">
+            <h2 class="titulo-secao">Áreas de atuação</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icone">🌍</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Monitoramento de desmatamento, emissões de carbono e prevenção de desastres com dados de satélite.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🌱</div>
+                    <h3>Agricultura</h3>
+                    <p>Imagens de satélite para aumentar a produtividade e procurar recursos naturais de forma sustentável.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">📡</div>
+                    <h3>Conectividade</h3>
+                    <p>Internet via satélite para regiões remotas e rastreamento em tempo real.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🤖</div>
+                    <h3>Inovação</h3>
+                    <p>Inteligência artificial, sistemas autônomos e robótica explorando novas oportunidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Quiz sobre o tema</h2>
+            <p class="texto-centro">Responda as 10 perguntas abaixo e veja quantas você acertou.</p>
+
+            <form id="quiz-form">
+                <div id="quiz-perguntas"></div>
+                <div class="quiz-acoes">
+                    <button type="submit" class="botao">Ver resultado</button>
+                </div>
+            </form>
+
+            <div id="quiz-resultado" class="quiz-resultado"></div>
+        </div>
+    </section>
+
+        <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Space Connect</strong> - Global Solution FIAP</p>
+            <p>Projeto desenvolvido por: Matheus Tasso, Daniel Boccia, Matheus Augusto e Kaik Sales.</p>
+            <p class="rodape-mini">1º Semestre - Web Development</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
+
