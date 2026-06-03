@@ -262,3 +262,40 @@ body {
 .card p {
     font-size: 14px;
 }
+
+/* Quiz */
+.pergunta {
+    background-color: var(--fundo-claro);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+}
+
+.pergunta-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.opcao {
+    display: block;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.opcao input {
+    margin-right: 8px;
+}
+
+.quiz-acoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-resultado {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: var(--destaque);
+}
