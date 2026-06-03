@@ -136,3 +136,21 @@ const perguntas = [
 ];
 
 const quizPerguntas = document.getElementById("quiz-perguntas");
+
+// monta as perguntas na tela
+perguntas.forEach(function (item, indice) {
+    const divPergunta = document.createElement("div");
+    divPergunta.classList.add("pergunta");
+
+    let html = "<p class='pergunta-titulo'>" + (indice + 1) + ") " + item.pergunta + "</p>";
+
+    item.opcoes.forEach(function (opcao, posicao) {
+        html += "<label class='opcao'>";
+        html += "<input type='radio' name='pergunta" + indice + "' value='" + posicao + "'>";
+        html += opcao;
+        html += "</label>";
+    });
+
+    divPergunta.innerHTML = html;
+    quizPerguntas.appendChild(divPergunta);
+});
