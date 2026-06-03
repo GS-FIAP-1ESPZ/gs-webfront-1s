@@ -194,3 +194,42 @@ body {
 .bolinha.ativa {
     background-color: var(--destaque);
 }
+
+/* Seções */
+.secao {
+    padding: 60px 0;
+}
+
+.secao-alt {
+    background-color: var(--fundo-claro);
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: var(--destaque);
+}
+
+.texto-centro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+}
+
+/* ODS */
+.ods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.ods-tag {
+    background-color: var(--destaque);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
