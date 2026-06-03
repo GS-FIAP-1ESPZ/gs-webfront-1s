@@ -154,3 +154,20 @@ perguntas.forEach(function (item, indice) {
     divPergunta.innerHTML = html;
     quizPerguntas.appendChild(divPergunta);
 });
+
+// calcula o resultado
+document.getElementById("quiz-form").addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    let acertos = 0;
+
+    perguntas.forEach(function (item, indice) {
+        const respostaMarcada = document.querySelector("input[name='pergunta" + indice + "']:checked");
+        if (respostaMarcada && Number(respostaMarcada.value) === item.correta) {
+            acertos++;
+        }
+    });
+
+    const resultado = document.getElementById("quiz-resultado");
+    resultado.textContent = "Você acertou " + acertos + " de " + perguntas.length + " perguntas!";
+});
