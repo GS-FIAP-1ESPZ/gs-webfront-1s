@@ -1,0 +1,48 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Temas */
+.theme-space {
+    --fundo: #0b1020;
+    --fundo-claro: #131c3a;
+    --texto: #e8ecff;
+    --destaque: #4f8cff;
+    --borda: #2a3661;
+}
+
+.theme-light {
+    --fundo: #f4f6fb;
+    --fundo-claro: #ffffff;
+    --texto: #1a2238;
+    --destaque: #2563eb;
+    --borda: #d6ddec;
+}
+
+.theme-purple {
+    --fundo: #1a0b2e;
+    --fundo-claro: #2a1147;
+    --texto: #f3e9ff;
+    --destaque: #a855f7;
+    --borda: #43266b;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-estreito {
+    max-width: 600px;
+}
