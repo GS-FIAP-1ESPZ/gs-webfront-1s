@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 450" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <radialGradient id="ceu1" cx="30%" cy="30%" r="90%">
+            <stop offset="0%" stop-color="#1b2a5a"/>
+            <stop offset="100%" stop-color="#070b1c"/>
+        </radialGradient>
+        <radialGradient id="terra" cx="35%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#4aa3ff"/>
+            <stop offset="100%" stop-color="#0a3d8f"/>
+        </radialGradient>
+    </defs>
+
+    <rect width="1100" height="450" fill="url(#ceu1)"/>
+
+    <!-- estrelas -->
+    <g fill="#ffffff">
+        <circle cx="120" cy="60" r="2"/>
+        <circle cx="260" cy="120" r="1.5"/>
+        <circle cx="420" cy="50" r="2"/>
+        <circle cx="600" cy="90" r="1.5"/>
+        <circle cx="780" cy="40" r="2"/>
+        <circle cx="930" cy="110" r="1.5"/>
+        <circle cx="1020" cy="60" r="2"/>
+        <circle cx="180" cy="200" r="1.5"/>
+        <circle cx="500" cy="180" r="1.5"/>
+        <circle cx="870" cy="200" r="1.5"/>
+    </g>
+
+    <!-- Terra -->
+    <circle cx="780" cy="370" r="200" fill="url(#terra)"/>
+    <g fill="#2f9e54" opacity="0.85">
+        <path d="M700 280 q40 -20 80 5 q20 25 -10 45 q-50 10 -70 -20 z"/>
+        <path d="M850 340 q40 0 55 30 q5 30 -35 35 q-40 -10 -40 -40 z"/>
+        <path d="M720 420 q35 -10 60 15 q5 25 -30 30 q-40 -5 -40 -30 z"/>
+    </g>
+
+    <!-- satelite -->
+    <g transform="translate(300 150) rotate(-15)">
+        <rect x="-18" y="-15" width="36" height="30" rx="4" fill="#cfd8ff"/>
+        <rect x="-70" y="-10" width="45" height="20" fill="#3b6cf2"/>
+        <rect x="25" y="-10" width="45" height="20" fill="#3b6cf2"/>
+        <line x1="-25" y1="0" x2="-70" y2="0" stroke="#9fb0e8" stroke-width="2"/>
+        <line x1="25" y1="0" x2="70" y2="0" stroke="#9fb0e8" stroke-width="2"/>
+        <line x1="0" y1="-15" x2="0" y2="-35" stroke="#cfd8ff" stroke-width="2"/>
+        <circle cx="0" cy="-38" r="5" fill="#ffd166"/>
+    </g>
+</svg>

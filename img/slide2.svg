@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 450" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="ceu2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0a1230"/>
+            <stop offset="100%" stop-color="#251a3d"/>
+        </linearGradient>
+        <linearGradient id="fogo" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd166"/>
+            <stop offset="100%" stop-color="#ef476f"/>
+        </linearGradient>
+    </defs>
+
+    <rect width="1100" height="450" fill="url(#ceu2)"/>
+
+    <!-- estrelas -->
+    <g fill="#ffffff">
+        <circle cx="150" cy="80" r="2"/>
+        <circle cx="320" cy="50" r="1.5"/>
+        <circle cx="900" cy="70" r="2"/>
+        <circle cx="1000" cy="140" r="1.5"/>
+        <circle cx="780" cy="120" r="1.5"/>
+        <circle cx="220" cy="180" r="1.5"/>
+    </g>
+
+    <!-- lua -->
+    <circle cx="950" cy="110" r="55" fill="#e6e9f5"/>
+    <circle cx="935" cy="95" r="12" fill="#cfd3e6"/>
+    <circle cx="965" cy="125" r="8" fill="#cfd3e6"/>
+
+    <!-- foguete -->
+    <g transform="translate(540 230)">
+        <!-- fogo -->
+        <path d="M-18 120 Q0 220 18 120 Q0 150 -18 120 Z" fill="url(#fogo)"/>
+        <!-- corpo -->
+        <rect x="-25" y="-90" width="50" height="210" rx="22" fill="#f1f3ff"/>
+        <!-- bico -->
+        <path d="M-25 -90 Q0 -160 25 -90 Z" fill="#ef476f"/>
+        <!-- janela -->
+        <circle cx="0" cy="-30" r="15" fill="#4f8cff"/>
+        <circle cx="0" cy="-30" r="8" fill="#bcd3ff"/>
+        <!-- aletas -->
+        <path d="M-25 70 L-55 130 L-25 110 Z" fill="#ef476f"/>
+        <path d="M25 70 L55 130 L25 110 Z" fill="#ef476f"/>
+        <rect x="-25" y="40" width="50" height="10" fill="#dce1f7"/>
+    </g>
+</svg>
