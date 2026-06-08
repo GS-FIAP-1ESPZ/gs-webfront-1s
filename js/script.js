@@ -27,6 +27,30 @@ linksMenu.forEach(function (link) {
     });
 });
 
+/* Indica em qual seção o usuário está */
+const secoes = document.querySelectorAll("section[id]");
+
+function marcarSecaoAtiva() {
+    const posicao = window.scrollY + 120;
+    let atual = "";
+
+    secoes.forEach(function (secao) {
+        if (posicao >= secao.offsetTop) {
+            atual = secao.getAttribute("id");
+        }
+    });
+
+    linksMenu.forEach(function (link) {
+        link.classList.remove("ativo");
+        if (link.getAttribute("href") === "#" + atual) {
+            link.classList.add("ativo");
+        }
+    });
+}
+
+window.addEventListener("scroll", marcarSecaoAtiva);
+window.addEventListener("load", marcarSecaoAtiva);
+
 /* Slideshow */
 const slides = document.querySelectorAll(".slide");
 const bolinhasDiv = document.getElementById("bolinhas");
@@ -159,15 +183,26 @@ perguntas.forEach(function (item, indice) {
 document.getElementById("quiz-form").addEventListener("submit", function (evento) {
     evento.preventDefault();
 
+    const resultado = document.getElementById("quiz-resultado");
+    let respondidas = 0;
     let acertos = 0;
 
     perguntas.forEach(function (item, indice) {
-        const respostaMarcada = document.querySelector("input[name='pergunta" + indice + "']:checked");
-        if (respostaMarcada && Number(respostaMarcada.value) === item.correta) {
-            acertos++;
+        const marcada = document.querySelector("input[name='pergunta" + indice + "']:checked");
+        if (marcada) {
+            respondidas++;
+            if (Number(marcada.value) === item.correta) {
+                acertos++;
+            }
         }
     });
 
-    const resultado = document.getElementById("quiz-resultado");
+    if (respondidas < perguntas.length) {
+        resultado.className = "quiz-resultado erro";
+        resultado.textContent = "Responda todas as perguntas antes de ver o resultado (" + respondidas + "/" + perguntas.length + ").";
+        return;
+    }
+
+    resultado.className = "quiz-resultado ok";
     resultado.textContent = "Você acertou " + acertos + " de " + perguntas.length + " perguntas!";
 });

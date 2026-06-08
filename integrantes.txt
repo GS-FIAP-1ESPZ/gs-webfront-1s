@@ -1,5 +1,5 @@
 Space Connect - Global Solution FIAP
-Disciplina: Web Development - 1o Semestre
+Disciplina: Front-End Design - 1o Semestre
 
 Integrantes do grupo:
 
@@ -7,6 +7,3 @@ Nome: Matheus Tasso Djamdjian      | RM: 57076
 Nome: Daniel Silva Boccia          | RM: 569617
 Nome: Matheus Augusto da Silva     | RM: 572976
 Nome: Kaik Sales de Amorim         | RM: 571558
-
-Link do repositorio GitHub:
-https://github.com/GS-FIAP-1ESPZ/gs-webfront-1s

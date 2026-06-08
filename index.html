@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Connect - Global Solution FIAP</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="theme-space">
@@ -17,18 +23,21 @@
 
             <nav>
                 <ul class="menu" id="menu">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#areas">Áreas</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#publico">Público</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#aplicacao">Aplicação</a></li>
                     <li><a href="#quiz">Quiz</a></li>
                 </ul>
             </nav>
 
             <div class="temas">
                 <span class="temas-label">Tema:</span>
-                <button class="tema-btn cor-espaco" data-tema="theme-space" title="Tema Espaço"></button>
-                <button class="tema-btn cor-claro" data-tema="theme-light" title="Tema Claro"></button>
-                <button class="tema-btn cor-roxo" data-tema="theme-purple" title="Tema Roxo"></button>
+                <button class="tema-btn cor-espaco" data-tema="theme-space" title="Tema Espaço" aria-label="Tema Espaço"></button>
+                <button class="tema-btn cor-claro" data-tema="theme-light" title="Tema Claro" aria-label="Tema Claro"></button>
+                <button class="tema-btn cor-roxo" data-tema="theme-purple" title="Tema Roxo" aria-label="Tema Roxo"></button>
             </div>
         </div>
     </header>
@@ -40,11 +49,11 @@
                 <img src="img/slide1.svg" alt="Satélite observando a Terra">
                 <div class="slide-texto">
                     <h2>A nova corrida tecnológica</h2>
-                    <p>O espaço deixou de ser apenas exploração científica e virou um dos territórios mais estratégicos para inovação.</p>
+                    <p>O espaço virou um dos territórios mais estratégicos para a inovação.</p>
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide2.svg" alt="Foguete sendo lançado">
+                <img src="img/slide2.svg" alt="Foguete sendo lançado ao espaço">
                 <div class="slide-texto">
                     <h2>Tecnologia espacial a serviço da Terra</h2>
                     <p>Dados de satélites ajudam a monitorar o desmatamento, as emissões de carbono e a prevenir desastres naturais.</p>
@@ -59,21 +68,81 @@
             </div>
         </div>
 
-        <button class="seta seta-anterior" id="anterior">&#10094;</button>
-        <button class="seta seta-proxima" id="proxima">&#10095;</button>
+        <button class="seta seta-anterior" id="anterior" aria-label="Slide anterior">&#10094;</button>
+        <button class="seta seta-proxima" id="proxima" aria-label="Próximo slide">&#10095;</button>
 
         <div class="bolinhas" id="bolinhas"></div>
     </section>
 
-    <!-- Sobre o tema -->
-    <section id="sobre" class="secao">
+    <!-- Problema -->
+    <section id="problema" class="secao">
         <div class="container">
-            <h2 class="titulo-secao">Sobre o tema</h2>
-            <p class="texto-centro">
-                A <strong>Global Solution</strong> tem como tema a <strong>tecnologia espacial aplicada a desafios reais</strong>.
-                O desafio é usar tecnologia, dados e inovação para resolver problemas reais. Este projeto, chamado <strong>Space Connect</strong>,
-                apresenta o tema e testa o seu conhecimento sobre ele.
-            </p>
+            <span class="secao-eyebrow">Seção 1</span>
+            <h2 class="titulo-secao">O Problema</h2>
+            <div class="secao-dupla">
+                <div class="secao-texto">
+                    <p>Desmatamento, mudanças climáticas e desastres naturais afetam milhões de pessoas todos os anos.</p>
+                    <p>Monitorar o planeta em larga escala e em tempo real ainda é um grande desafio.</p>
+                </div>
+                <div class="secao-imagem">
+                    <img src="img/problema.svg" alt="Ilustração da Terra cercada por alertas ambientais">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologia -->
+    <section id="tecnologia" class="secao secao-alt">
+        <div class="container">
+            <span class="secao-eyebrow">Seção 2</span>
+            <h2 class="titulo-secao">Tecnologia</h2>
+            <p class="texto-centro">Combinamos satélites, sensores remotos e imagens orbitais para enxergar a Terra de cima.</p>
+            <p class="texto-centro">Inteligência artificial e big data transformam esses dados em decisões rápidas.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icone">🛰️</div>
+                    <h3>Satélites</h3>
+                    <p>Coletam imagens e dados precisos da superfície da Terra.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">📡</div>
+                    <h3>Sensores remotos</h3>
+                    <p>Captam informações sobre clima, solo e oceanos a distância.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🤖</div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Analisa grandes volumes de dados e gera previsões confiáveis.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">☁️</div>
+                    <h3>Big Data e Nuvem</h3>
+                    <p>Processa informações em escala global em poucos segundos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos" class="secao">
+        <div class="container">
+            <span class="secao-eyebrow">Seção 3</span>
+            <h2 class="titulo-secao">Objetivos</h2>
+            <div class="secao-dupla">
+                <div class="secao-imagem">
+                    <img src="img/objetivos.svg" alt="Ilustração de um alvo sendo atingido representando metas">
+                </div>
+                <div class="secao-texto">
+                    <p>Transformar dados espaciais em soluções acessíveis para problemas ambientais, sociais e econômicos.</p>
+                    <p>Democratizar o acesso à informação gerada no espaço e apoiar decisões sustentáveis.</p>
+                    <ul class="lista-check">
+                        <li>Monitorar o planeta em tempo real</li>
+                        <li>Reduzir perdas no campo</li>
+                        <li>Levar conectividade a todos</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="ods">
                 <span class="ods-tag">ODS 2 - Fome Zero</span>
@@ -85,10 +154,47 @@
         </div>
     </section>
 
-    <!-- Áreas de atuação -->
-    <section id="areas" class="secao secao-alt">
+    <!-- Público-alvo -->
+    <section id="publico" class="secao secao-alt">
         <div class="container">
-            <h2 class="titulo-secao">Áreas de atuação</h2>
+            <span class="secao-eyebrow">Seção 4</span>
+            <h2 class="titulo-secao">Público-alvo</h2>
+            <p class="texto-centro">Nossa solução impacta quem precisa de dados confiáveis para decidir melhor.</p>
+            <p class="texto-centro">De agricultores e governos a pesquisadores e comunidades isoladas pelo mundo.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icone">🌾</div>
+                    <h3>Agricultores</h3>
+                    <p>Aumentam a produtividade com dados sobre plantio e clima.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🏛️</div>
+                    <h3>Governos</h3>
+                    <p>Planejam políticas públicas e respondem rápido a desastres.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🔬</div>
+                    <h3>Pesquisadores</h3>
+                    <p>Estudam o clima, os oceanos e o meio ambiente.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🏘️</div>
+                    <h3>Comunidades remotas</h3>
+                    <p>Recebem internet e serviços essenciais via satélite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="secao">
+        <div class="container">
+            <span class="secao-eyebrow">Seção 5</span>
+            <h2 class="titulo-secao">Benefícios</h2>
+            <p class="texto-centro">A tecnologia espacial gera ganhos reais para o planeta e para as pessoas.</p>
+            <p class="texto-centro">Mais sustentabilidade, produtividade, conectividade e inovação em um só lugar.</p>
+
             <div class="cards">
                 <div class="card">
                     <div class="card-icone">🌍</div>
@@ -114,13 +220,35 @@
         </div>
     </section>
 
+    <!-- Aplicação no dia a dia -->
+    <section id="aplicacao" class="secao secao-alt">
+        <div class="container">
+            <span class="secao-eyebrow">Seção 6</span>
+            <h2 class="titulo-secao">Aplicação no dia a dia</h2>
+            <div class="secao-dupla">
+                <div class="secao-texto">
+                    <p>O agricultor recebe no celular alertas sobre a sua plantação e evita perdas.</p>
+                    <p>Cidades preveem enchentes e comunidades isoladas acessam a internet por satélite.</p>
+                    <ul class="lista-check">
+                        <li>Alertas de clima em tempo real</li>
+                        <li>Mapas de produtividade do solo</li>
+                        <li>Internet em qualquer lugar</li>
+                    </ul>
+                </div>
+                <div class="secao-imagem">
+                    <img src="img/aplicacao.svg" alt="Satélite enviando dados para um celular sobre uma plantação">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Quiz -->
     <section id="quiz" class="secao">
         <div class="container">
             <h2 class="titulo-secao">Quiz sobre o tema</h2>
             <p class="texto-centro">Responda as 10 perguntas abaixo e veja quantas você acertou.</p>
 
-            <form id="quiz-form">
+            <form id="quiz-form" novalidate>
                 <div id="quiz-perguntas"></div>
                 <div class="quiz-acoes">
                     <button type="submit" class="botao">Ver resultado</button>
@@ -134,9 +262,14 @@
         <!-- Rodapé -->
     <footer class="rodape">
         <div class="container">
-            <p><strong>Space Connect</strong> - Global Solution FIAP</p>
-            <p>Projeto desenvolvido por: Matheus Tasso, Daniel Boccia, Matheus Augusto e Kaik Sales.</p>
-            <p class="rodape-mini">1º Semestre - Web Development</p>
+            <p class="rodape-titulo"><strong>Space Connect</strong> - Global Solution FIAP</p>
+            <ul class="rodape-integrantes">
+                <li>Matheus <span>RM 57076</span></li>
+                <li>Daniel <span>RM 569617</span></li>
+                <li>Matheus <span>RM 572976</span></li>
+                <li>Kaik <span>RM 571558</span></li>
+            </ul>
+            <p class="rodape-mini">1º Semestre - Front-End Design e Web Development</p>
         </div>
     </footer>
 
