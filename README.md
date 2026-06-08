@@ -20,16 +20,15 @@ Abrir o arquivo `index.html` no navegador.
 5. **Benefícios** – ganhos oferecidos
 6. **Aplicação no dia a dia** – uso prático da solução
 
-Recursos: menu funcional com indicação da seção ativa, Google Fonts, variáveis CSS,
+Recursos: menu com indicação da seção ativa, Google Fonts, variáveis CSS,
 reset CSS, layout em Flexbox, imagens com `alt`, hovers e rodapé padronizado.
 
 ## Funcionalidades (Web Development)
 
 - Slideshow com 3 imagens do tema
-- Quiz dinâmico com 10 perguntas e exibição do resultado
-- Formulário do quiz com validação que impede envio incompleto
-- 3 opções de troca de cor (tema) de fundo
-- JavaScript puro, sem frameworks, e layout responsivo
+- Quiz com 10 perguntas e resultado - validação que impede envio incompleto
+- troca de cor de fundo
+- JavaScript e responsivo
 
 ## Integrantes
 
