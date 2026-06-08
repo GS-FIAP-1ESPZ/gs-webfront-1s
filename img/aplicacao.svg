@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+    <defs>
+        <linearGradient id="aBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#13224a"/>
+            <stop offset="100%" stop-color="#0a1230"/>
+        </linearGradient>
+    </defs>
+
+    <rect width="480" height="360" rx="18" fill="url(#aBg)"/>
+
+    <!-- estrelas -->
+    <g fill="#ffffff" opacity="0.7">
+        <circle cx="80" cy="60" r="2"/>
+        <circle cx="380" cy="50" r="1.5"/>
+        <circle cx="430" cy="120" r="1.5"/>
+    </g>
+
+    <!-- campo -->
+    <path d="M0 300 q120 -30 240 0 q120 30 240 0 L480 360 L0 360 Z" fill="#2f9e54" opacity="0.85"/>
+
+    <!-- satelite -->
+    <g transform="translate(110 110) rotate(-15)">
+        <rect x="-16" y="-14" width="32" height="28" rx="4" fill="#cfd8ff"/>
+        <rect x="-60" y="-9" width="38" height="18" fill="#3b6cf2"/>
+        <rect x="22" y="-9" width="38" height="18" fill="#3b6cf2"/>
+        <line x1="0" y1="-14" x2="0" y2="-26" stroke="#cfd8ff" stroke-width="2"/>
+        <circle cx="0" cy="-30" r="4" fill="#ffd166"/>
+    </g>
+
+    <!-- sinal -->
+    <g stroke="#4f8cff" stroke-width="3" stroke-dasharray="6 8" fill="none">
+        <line x1="130" y1="130" x2="300" y2="220"/>
+    </g>
+
+    <!-- celular -->
+    <g transform="translate(300 210)">
+        <rect x="-45" y="-70" width="90" height="150" rx="14" fill="#0e1733" stroke="#4f8cff" stroke-width="3"/>
+        <rect x="-34" y="-58" width="68" height="110" rx="6" fill="#13224a"/>
+        <circle cx="0" cy="-2" r="20" fill="#2f9e54"/>
+        <path d="M-9 -2 l6 7 l12 -14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="-22" y="30" width="44" height="6" rx="3" fill="#3b6cf2"/>
+        <rect x="-22" y="42" width="30" height="6" rx="3" fill="#2a3661"/>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+    <defs>
+        <linearGradient id="oBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#13224a"/>
+            <stop offset="100%" stop-color="#0a1230"/>
+        </linearGradient>
+    </defs>
+
+    <rect width="480" height="360" rx="18" fill="url(#oBg)"/>
+
+    <!-- estrelas -->
+    <g fill="#ffffff" opacity="0.7">
+        <circle cx="70" cy="60" r="2"/>
+        <circle cx="410" cy="70" r="1.5"/>
+        <circle cx="120" cy="300" r="1.5"/>
+        <circle cx="400" cy="300" r="2"/>
+    </g>
+
+    <!-- alvo -->
+    <g transform="translate(240 185)">
+        <circle r="120" fill="none" stroke="#2a3661" stroke-width="14"/>
+        <circle r="86" fill="none" stroke="#3b6cf2" stroke-width="14"/>
+        <circle r="52" fill="none" stroke="#4f8cff" stroke-width="14"/>
+        <circle r="20" fill="#ffd166"/>
+    </g>
+
+    <!-- flecha / trajetoria -->
+    <g transform="translate(240 185) rotate(-30)">
+        <line x1="-150" y1="0" x2="-30" y2="0" stroke="#cfd8ff" stroke-width="4"/>
+        <path d="M-30 0 l-18 -8 l0 16 z" fill="#cfd8ff"/>
+    </g>
+
+    <!-- check -->
+    <g transform="translate(370 95)">
+        <circle r="26" fill="#2f9e54"/>
+        <path d="M-12 0 l8 9 l16 -18" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>

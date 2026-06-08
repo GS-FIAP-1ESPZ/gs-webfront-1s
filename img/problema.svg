@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+    <defs>
+        <linearGradient id="pBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#16224a"/>
+            <stop offset="100%" stop-color="#0a1230"/>
+        </linearGradient>
+        <radialGradient id="pTerra" cx="40%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#4aa3ff"/>
+            <stop offset="100%" stop-color="#0a3d8f"/>
+        </radialGradient>
+    </defs>
+
+    <rect width="480" height="360" rx="18" fill="url(#pBg)"/>
+
+    <!-- estrelas -->
+    <g fill="#ffffff" opacity="0.8">
+        <circle cx="60" cy="50" r="2"/>
+        <circle cx="150" cy="90" r="1.5"/>
+        <circle cx="300" cy="40" r="2"/>
+        <circle cx="420" cy="80" r="1.5"/>
+        <circle cx="380" cy="150" r="1.5"/>
+    </g>
+
+    <!-- Terra -->
+    <circle cx="240" cy="340" r="170" fill="url(#pTerra)"/>
+    <g fill="#2f9e54" opacity="0.85">
+        <path d="M150 260 q40 -20 80 5 q20 25 -10 45 q-50 10 -70 -20 z"/>
+        <path d="M300 305 q40 0 55 30 q5 30 -35 35 q-40 -10 -40 -40 z"/>
+    </g>
+
+    <!-- alertas -->
+    <g transform="translate(150 120)">
+        <path d="M0 -28 L26 18 L-26 18 Z" fill="#ffd166" stroke="#b8860b" stroke-width="2"/>
+        <rect x="-3" y="-12" width="6" height="18" rx="2" fill="#3a2c00"/>
+        <circle cx="0" cy="11" r="3" fill="#3a2c00"/>
+    </g>
+    <g transform="translate(320 150) scale(0.8)">
+        <path d="M0 -28 L26 18 L-26 18 Z" fill="#ff6b6b" stroke="#a11111" stroke-width="2"/>
+        <rect x="-3" y="-12" width="6" height="18" rx="2" fill="#ffffff"/>
+        <circle cx="0" cy="11" r="3" fill="#ffffff"/>
+    </g>
+</svg>
