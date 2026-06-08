@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +28,6 @@ a {
     --fonte-texto: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-/* Configuração geral */
 body {
     font-family: var(--fonte-texto);
     background-color: var(--fundo);
@@ -37,7 +35,7 @@ body {
     line-height: 1.6;
 }
 
-/* Temas (variáveis de cores) */
+/* Temas */
 .theme-space {
     --fundo: #0b1020;
     --fundo-claro: #131c3a;
@@ -111,7 +109,6 @@ body {
     color: var(--destaque);
 }
 
-/* Indica em qual seção o usuário está */
 .menu a.ativo {
     color: var(--destaque);
     border-bottom-color: var(--destaque);
@@ -285,7 +282,7 @@ body {
     margin: 0 auto 12px auto;
 }
 
-/* Seções com imagem (Flexbox em duas colunas) */
+/* Seções com imagem */
 .secao-dupla {
     display: flex;
     align-items: center;
